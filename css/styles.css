@@ -79,9 +79,6 @@ ul {
 
 }
 
-.link {
-  padding: 24px 0;
-}
 
 .social-links .link {
   color: #2e2f42;
@@ -143,9 +140,9 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
-  margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 292px;
+  margin: 0 auto 48px;
+  
+  
 
 }
 
@@ -298,7 +295,7 @@ ul {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
+  
 }
 
 
@@ -323,8 +320,7 @@ ul {
   color: #f4f4fd;
 }
 
-.second-logo,
-.second-logo-element {
+.second-logo {
   display: inline-block;
   margin-bottom: 16px;
 
