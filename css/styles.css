@@ -28,12 +28,10 @@ ul {
 }
 
 .container {
-
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
 }
 
 /* Header */
@@ -43,7 +41,6 @@ ul {
 
 .second-container {
   display: flex;
-
 }
 
 .nav-container {
@@ -75,15 +72,13 @@ ul {
   letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
-  padding: 24px 0px;
-
+  padding: 0px;
 }
-
 
 .social-links .link {
   color: #2e2f42;
-
-
+  padding: 24px 0px;
+  display: block;
 }
 
 .social-links .link:hover {
@@ -110,7 +105,6 @@ ul {
   letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
-
 }
 
 .contacts {
@@ -141,9 +135,6 @@ ul {
   text-align: center;
   max-width: 496px;
   margin: 0 auto 48px;
-  
-  
-
 }
 
 .button {
@@ -161,9 +152,6 @@ ul {
   height: 56px;
   border: none;
   border-radius: 4px;
-
-
-
 }
 
 .button:hover {
@@ -193,15 +181,12 @@ ul {
 }
 
 .features {
-
   display: flex;
   gap: 24px;
-
 }
 
 .plan-features {
   width: calc((100% - 72px) / 4);
-
 }
 
 .plan-title {
@@ -211,7 +196,6 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-
 }
 
 .paragraph {
@@ -220,7 +204,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
 }
 
 /* Section 3 */
@@ -250,7 +233,6 @@ ul {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-
 }
 
 .name {
@@ -258,7 +240,6 @@ ul {
 }
 
 .plan-title {
-
   margin-bottom: 8px;
 }
 
@@ -283,7 +264,6 @@ ul {
   padding: 0;
   list-style: none;
   column-gap: 24px;
-
 }
 
 .cards-content {
@@ -295,9 +275,7 @@ ul {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  
 }
-
 
 /* Footer */
 .board-for-footer {
@@ -313,7 +291,6 @@ ul {
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
 }
 
 .second-logo-element {
@@ -323,7 +300,6 @@ ul {
 .second-logo {
   display: inline-block;
   margin-bottom: 16px;
-
 }
 
 .text-footer {
@@ -333,5 +309,4 @@ ul {
   line-height: 24px;
   letter-spacing: 0.02em;
   max-width: 264px;
-
 }
