@@ -321,7 +321,7 @@ ul {
 }
 .link-icon-team:hover,
 .link-icon-team:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 /* Section 4 */
