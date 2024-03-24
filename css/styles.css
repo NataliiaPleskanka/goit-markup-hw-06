@@ -38,6 +38,8 @@ ul {
 /* Header */
 .header-of-container {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .second-container {
@@ -80,6 +82,7 @@ ul {
   color: #2e2f42;
   padding: 24px 0px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links .link:hover {
@@ -89,7 +92,7 @@ ul {
 .social-links .link:focus {
   color: #404bbf;
 }
-.current {
+.social-links .current {
   position: relative;
   color: #404bbf;
 }
@@ -125,6 +128,7 @@ ul {
 
 .contacts {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover {
@@ -149,6 +153,7 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .title {
@@ -314,6 +319,10 @@ ul {
 .icon-team {
   fill: #f4f4fd;
 }
+.link-icon-team:hover,
+.link-icon-team:focus {
+  color: #404bbf;
+}
 
 /* Section 4 */
 .section-four {
@@ -419,6 +428,9 @@ ul {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+.margin-footer {
+  margin-right: 120px;
+}
 
 .footer-media {
   letter-spacing: 0.32px;
@@ -426,7 +438,7 @@ ul {
   width: 208px;
   height: 80px;
   color: #ffffff;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 .social {
   font-weight: 500;
@@ -441,8 +453,7 @@ ul {
   display: flex;
   gap: 16px;
 }
-.li-icons-footer {
-}
+
 .link-icon-footer {
   width: 40px;
   height: 40px;
@@ -458,6 +469,6 @@ ul {
   fill: #f4f4fd;
 }
 .link-icon-footer:hover,
-.link-icon-footer:active {
+.link-icon-footer:focus {
   background-color: #31d0aa;
 }
