@@ -470,9 +470,7 @@ ul {
   background-color: #31d0aa;
 }
 .footer-email-input {
-  width: 453;
-  height: 80px;
-  margin-left: 80px;
+  margin-left: auto;
 }
 .subscribe {
   font-weight: 500;
@@ -513,7 +511,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
+
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -529,6 +527,13 @@ ul {
   border: none;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-footer:hover {
+  background-color: #404bbf;
+}
+
+.button-footer:focus {
+  background-color: #404bbf;
 }
 .icon-button {
   margin-left: 16px;
@@ -634,6 +639,7 @@ ul {
   position: relative;
 }
 .modal-input {
+  font-size: 12px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
@@ -683,11 +689,17 @@ ul {
 .input-check {
   border-radius: 2px;
   border: 1px solid #2e2f42;
+  margin-right: 8px;
 }
+
 .input-check:checked + .check-text > .check {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
+}
+
+.input-check:focus + .check-text > .check {
+  border-color: #4d5ae5;
 }
 .check-text {
   color: #8e8f99;
@@ -741,4 +753,11 @@ ul {
   letter-spacing: 0.04em;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-modal:hover {
+  background-color: #404bbf;
+}
+
+.button-modal:focus {
+  background-color: #404bbf;
 }
