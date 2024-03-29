@@ -685,9 +685,10 @@ ul {
   border: 1px solid #2e2f42;
 }
 .input-check:checked + .check-text > .check {
+  background-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
-
 .check-text {
   color: #8e8f99;
   max-width: 360px;
