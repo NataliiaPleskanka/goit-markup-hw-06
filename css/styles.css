@@ -423,7 +423,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  min-width: 264px;
+  max-width: 264px;
 }
 .margin-footer {
   margin-right: 120px;
@@ -689,7 +689,6 @@ ul {
 .input-check {
   border-radius: 2px;
   border: 1px solid #2e2f42;
-  margin-right: 8px;
 }
 
 .input-check:checked + .check-text > .check {
@@ -724,8 +723,9 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
 }
-.chech-icon {
+.check-icon {
 }
 .input-check-link {
   color: #4d5ae5;
