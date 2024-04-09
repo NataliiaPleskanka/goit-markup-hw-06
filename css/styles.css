@@ -107,7 +107,21 @@ ul {
   border-radius: 2px;
   background-color: #404bbf;
 }
-
+.header-btn {
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .address {
   display: flex;
   align-items: center;
@@ -139,51 +153,64 @@ ul {
   color: #404bbf;
 }
 
-/* Section 1 */
-.dark-board {
-  background-color: #2e2f42;
-  padding: 188px 0;
-}
-.dark-board-img {
+/* Hero Section  */
+.hero-section {
+  padding: 72px 0;
+  max-width: 320px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
-  background-position: center center;
+    url(../images/images_mob/Dark-bg-mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
+  background-position: center;
 }
 
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/images_mob/Dark-bg-mob@2x.jpg);
+  }
+}
+
+.container {
+  max-width: 320px;
+}
 .title {
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 56px;
   font-weight: 700;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 40px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
-  max-width: 496px;
-  margin: 0 auto 48px;
+  margin: auto;
+  color: #fff;
+  max-width: 216px;
+  margin-bottom: 72px;
 }
 
 .button {
-  display: block;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  background: #4d5ae5;
+  color: #fff;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
-  border: none;
+  display: block;
   border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  border: 0;
+  margin: auto;
+  min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -195,7 +222,73 @@ ul {
   background-color: #404bbf;
 }
 
-/* Section 2 */
+@media (min-width: 768px) {
+  .title {
+    max-width: 496px;
+    max-height: 120px;
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .container {
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/image_tab/Dark-bg-tab@1x.jpg);
+
+    padding: 112px 0;
+    max-width: 768px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/image_tab/Dark-bg-tab@2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 1158px) {
+  .hero-section {
+    max-width: 1440px;
+  }
+
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/image_desktop/desktop-office@1x.jpg);
+    padding: 188px 0;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/image_desktop/desktop-office@2x.jpg);
+    }
+  }
+}
+
+/* Advantages Section */
 .inform-board {
   padding: 120px 0;
 }
@@ -251,7 +344,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-/* Section 3 */
+/* Our Team */
 .second-board {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -323,7 +416,7 @@ ul {
   background-color: #404bbf;
 }
 
-/* Section 4 */
+/* Our Portfolio */
 .section-four {
   padding: 120px 0;
 }
@@ -386,7 +479,10 @@ ul {
 }
 
 /* Footer */
+
 .footer {
+  background-color: #2e2f42;
+  padding: 188px 0;
   padding: 100px 0;
   color: #f4f4fd;
   font-weight: 400;

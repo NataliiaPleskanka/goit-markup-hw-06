@@ -38,6 +38,12 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="header-btn">
+            <svg class="header-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
         <address class="address">
           <ul class="contacts-info">
             <li>
@@ -56,16 +62,16 @@
     </header>
     <!-- Main part -->
     <main>
-      <!-- Section 1 -->
+      <!-- Hero Section  -->
 
-      <section class="dark-board dark-board-img">
+      <section class="hero-section">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
 
-      <!-- Section 2 -->
+      <!-- Advantages Section  -->
       <section class="inform-board">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -121,14 +127,16 @@
           </ul>
         </div>
       </section>
-      <!-- Section 3 -->
+      <!-- Our Team -->
 
       <section class="second-board">
         <div class="container">
           <h2 class="subtitle">Our Team</h2>
           <ul class="personnel">
             <li class="stand">
-              <img src="./images/1.jpg" alt="Mark Guerrero" width="264" />
+              <img 
+              srcset="./images/img-mark@1x.jpg 1x, ./images/img-mark@2x.jpg 2x"
+              src="./images/img-mark@1x.jpg" alt="Mark Guerrero" width="264" />
               <div class="name">
                 <h3 class="plan-title title-align">Mark Guerrero</h3>
                 <p class="paragraph paragraph-align">Product Designer</p>
@@ -165,7 +173,8 @@
               </div>
             </li>
             <li class="stand">
-              <img src="./images/2.jpg" alt="Tom Ford" width="264" />
+              <img srcset="./images/img-tom@1x.jpg 1x, ./images/img-tom@1x.jpg 2x"
+              src="./images/img-tom@1x.jpg" alt="Tom Ford" width="264" />
               <div class="name">
                 <h3 class="plan-title title-align">Tom Ford</h3>
                 <p class="paragraph paragraph-align">Frontend Developer</p>
@@ -202,7 +211,9 @@
               </div>
             </li>
             <li class="stand">
-              <img src="./images/3.jpg" alt="Camila Garcia" width="264" />
+              <img 
+              srcset="./images/img-camila@1x.jpg 1x, ./images/img-camila@2x.jpg 2x"
+              src="./images/img-camila@1x.jpg" alt="Camila Garcia" width="264" />
               <div class="name">
                 <h3 class="plan-title title-align">Camila Garcia</h3>
                 <p class="paragraph paragraph-align">Marketing</p>
@@ -239,7 +250,9 @@
               </div>
             </li>
             <li class="stand">
-              <img src="./images/4.jpg" alt="Mark Guerrero" width="264" />
+              <img 
+              srcset="./images/img-daniel@1x.jpg 1x, ./images/img-daniel@2x.jpg 2x"
+              src="./images/img-daniel@1x.jpg" alt="Daniel Wilson" width="264" />
               <div class="name">
                 <h3 class="plan-title title-align">Daniel Wilson</h3>
                 <p class="paragraph paragraph-align">UI Designer</p>
@@ -279,7 +292,7 @@
         </div>
       </section>
 
-      <!-- Section 4 -->
+      <!-- Our Portfolio -->
 
       <section class="section-four">
         <div class="container">
@@ -287,7 +300,35 @@
           <ul class="cards">
             <li class="item-card">
               <div class="overlay">
-                <img src="./images/5.jpg" alt="Banking App" width="360" />
+                <picture>
+          <source
+          srcset="
+            ./images/image_desktop/img-desk1@1x.jpg 1x,
+            ./images/image_desktop/img-desk1@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+          />
+          <source
+          srcset="
+            ./images/image_tab/img-tab1@1x.jpg 1x,
+            ./images/image_tab/img-tab1@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          />
+          <source
+          srcset="
+            ./images/images_mob/img-mob1@1x.jpg 1x,
+            ./images/images_mob/img-mob1@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          />
+          <img
+          src="./images/images_mob/img-mob1@1x.jpg"
+          
+          alt="Banking App" width="360"
+          />
+                </picture>
+                
                 <p class="overlay-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -301,7 +342,36 @@
             </li>
             <li class="item-card">
               <div class="overlay">
-                <img src="./images/6.jpg" alt="Cashless Payment" width="360" />
+                <picture>
+          <source
+          srcset="
+            ./images/image_desktop/img-desk2@1x.jpg 1x,
+            ./images/image_desktop/img-desk2@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+          />
+          <source
+          srcset="
+            ./images/image_tab/img-tab2@1x.jpg 1x,
+            ./images/image_tab/img-tab2@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          />
+          <source
+          srcset="
+            ./images/images_mob/img-mob2@1x.jpg 1x,
+            ./images/images_mob/img-mob2@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          />
+          <img
+          src="./images/images_mob/img-mob2@1x.jpg"
+          
+          alt="Cashless Payment"  width="360"
+          />
+                </picture>
+
+                
                 <p class="overlay-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -315,7 +385,35 @@
             </li>
             <li class="item-card">
               <div class="overlay">
-                <img src="./images/7.jpg" alt="Meditation App" width="360" />
+                <picture>
+          <source
+          srcset="
+            ./images/image_desktop/img-desk3@1x.jpg 1x,
+            ./images/image_desktop/img-desk3@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+          />
+          <source
+          srcset="
+            ./images/image_tab/img-tab3@1x.jpg 1x,
+            ./images/image_tab/img-tab3@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          />
+          <source
+          srcset="
+            ./images/images_mob/img-mob3@1x.jpg 1x,
+            ./images/images_mob/img-mob3@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          />
+          <img
+          src="./images/images_mob/img-mob3@1x.jpg"
+          
+          alt="Meditation App"  width="360"
+          />
+                </picture>
+                
                 <p class="overlay-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -330,7 +428,35 @@
             </li>
             <li class="item-card">
               <div class="overlay">
-                <img src="./images/8.jpg" alt="Taxi Service" width="360" />
+                <picture>
+          <source
+          srcset="
+            ./images/image_desktop/img-desk4@1x.jpg 1x,
+            ./images/image_desktop/img-desk4@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+          />
+          <source
+          srcset="
+            ./images/image_tab/img-tab4@1x.jpg 1x,
+            ./images/image_tab/img-tab4@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          />
+          <source
+          srcset="
+            ./images/images_mob/img-mob4@1x.jpg 1x,
+            ./images/images_mob/img-mob4@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          />
+          <img
+          src="./images/images_mob/img-mob4@1x.jpg"
+          
+          alt="Taxi Service"  width="360"
+          />
+                </picture>
+                
                 <p class="overlay-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -345,11 +471,35 @@
             </li>
             <li class="item-card">
               <div class="overlay">
-                <img
-                  src="./images/9.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+                <picture>
+          <source
+          srcset="
+            ./images/image_desktop/img-desk5@1x.jpg 1x,
+            ./images/image_desktop/img-desk5@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+          />
+          <source
+          srcset="
+            ./images/image_tab/img-tab5@1x.jpg 1x,
+            ./images/image_tab/img-tab5@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          />
+          <source
+          srcset="
+            ./images/images_mob/img-mob5@1x.jpg 1x,
+            ./images/images_mob/img-mob5@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          />
+          <img
+          src="./images/images_mob/img-mob5@1x.jpg"
+          
+          alt="Screen Illustrations"  width="360"
+          />
+                </picture>
+                
                 <p class="overlay-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -364,7 +514,35 @@
             </li>
             <li class="item-card">
               <div class="overlay">
-                <img src="./images/10.jpg" alt="Online Courses" width="360" />
+                <picture>
+          <source
+          srcset="
+            ./images/image_desktop/img-desk6@1x.jpg 1x,
+            ./images/image_desktop/img-desk6@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+          />
+          <source
+          srcset="
+            ./images/image_tab/img-tab6@1x.jpg 1x,
+            ./images/image_tab/img-tab6@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          />
+          <source
+          srcset="
+            ./images/images_mob/img-mob6@1x.jpg 1x,
+            ./images/images_mob/img-mob6@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          />
+          <img
+          src="./images/images_mob/img-mob6@1x.jpg"
+          
+          alt="Online Courses"  width="360"
+          />
+                </picture>
+                
                 <p class="overlay-p">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -382,7 +560,7 @@
     </main>
     <!-- Footer -->
 
-    <footer class="dark-board footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="margin-footer">
           <a class="second-logo" href="/"
@@ -451,7 +629,7 @@
 
     <!--       Modal Overlay           -->
 
-    <div class="modal-overlay is-open">
+    <!-- <div class="modal-overlay is-open">
       <div class="modal">
         <button type="button" class="button-close">
           <svg class="icon-modal" width="8" height="8">
@@ -532,6 +710,6 @@
           <button class="button-modal" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <symbol id="icon-menu" viewBox="0 0 36 32">
+      <path
+        d="M1.199 4.002a2.4 2.4 0 0 1 2.4-2.4h28.8a2.4 2.4 0 1 1 0 4.8h-28.8a2.4 2.4 0 0 1-2.4-2.4zM1.199 16.002a2.4 2.4 0 0 1 2.4-2.4h28.8a2.4 2.4 0 1 1 0 4.8h-28.8a2.4 2.4 0 0 1-2.4-2.4zM1.199 28.002a2.4 2.4 0 0 1 2.4-2.4h28.8a2.4 2.4 0 1 1 0 4.8h-28.8a2.4 2.4 0 0 1-2.4-2.4z" />
+    </symbol>
+  </defs>
+  <defs>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path
         d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z" />
