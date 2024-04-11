@@ -29,9 +29,8 @@ ul {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -665,6 +664,7 @@ ul {
 .is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
