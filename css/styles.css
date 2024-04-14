@@ -809,7 +809,7 @@ ul {
     padding: 100px 0;
   }
   .margin-footer {
-    min-width: 264px;
+    max-width: 264px;
     margin: 0;
   }
   .footer-container {
