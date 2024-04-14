@@ -37,13 +37,13 @@
               <a class="link" href="">Contacts</a>
             </li>
           </ul>
-
-          <button type="button" class="header-btn">
-            <svg class="header-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
         </nav>
+        <button type="button" class="header-btn" data-menu-open>
+          <svg class="header-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <address class="address">
           <ul class="contacts-info">
             <li>
@@ -742,13 +742,86 @@
               >
             </label>
           </div>
-          <button class="button-modal" type="submit">Send</button>
+          <button class="button-modal" type="submit" data-menu-close>
+            Send
+          </button>
         </form>
       </div>
     </div>
 
     <!--          Mobile's menu         -->
 
-    <div></div>
+    <div class="mobile_menu" data-menu>
+      <button type="button" class="button-close">
+        <svg class="icon-modal" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile_menu_list">
+        <li class="mobile_menu_item">
+          <a class="mobile_menu_link current" href="">Studio</a>
+        </li>
+        <li class="mobile_menu_item">
+          <a class="mobile_menu_link" href="">Portfolio</a>
+        </li>
+        <li class="mobile_menu_item">
+          <a class="mobile_menu_link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile_menu-contact">
+        <li>
+          <a class="mob-menu-mail" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mob-menu-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile_menu_social">
+        <li class="mobile_social_lists">
+          <a href="/" class="mobile_social_link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile_social_lists">
+          <a href="/" class="mobile_social_link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile_social_lists">
+          <a href="/" class="mobile_social_link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile_social_lists">
+          <a href="/" class="mobile_social_link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <script>
+      () => {
+        const refs = {
+          openMenuBtn: document.querySelectorAll("[data-menu-open]"),
+          closeMenuBtn: document.querySelectorAll("[data-menu-close]"),
+          menu: document.querySelector("[data-menu]"),
+        };
+      };
+    </script> -->
   </body>
 </html>
