@@ -8,9 +8,9 @@ body {
 a {
   text-decoration: none;
 }
-/* .no-scroll {
+.no-scroll {
   overflow: hidden;
-} */
+}
 img {
   display: block;
   max-width: 100%;
@@ -487,6 +487,10 @@ ul {
   gap: 72px;
 }
 
+.name {
+  padding: 32px;
+}
+
 .title-for-section {
   font-weight: 500;
   font-size: 20px;
@@ -495,7 +499,6 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -507,12 +510,12 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  margin-bottom: 8px;
 }
 .icons-div {
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-top: 8px;
 }
 .icon-team {
   fill: #f4f4fd;
@@ -534,7 +537,6 @@ ul {
 }
 .stand {
   width: 264px;
-  padding: 0 0 32px 0;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -587,7 +589,6 @@ ul {
 }
 .item-card {
   /* width: calc((100% - 48px) / 3); */
-
   line-height: 24px;
   position: relative;
   tab-size: 4;
@@ -596,6 +597,7 @@ ul {
   transition-duration: 250ms;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 @media (min-width: 768px) {
   .cards {
@@ -697,7 +699,6 @@ ul {
   letter-spacing: 0.02em;
 }
 .margin-footer {
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
   margin-bottom: 72px;
@@ -748,7 +749,6 @@ ul {
   flex-direction: column;
   row-gap: 16px;
   align-items: center;
-  padding-bottom: 96px;
 }
 
 .footer-label {
@@ -808,6 +808,10 @@ ul {
   .footer {
     padding: 100px 0;
   }
+  .footer-media {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
   .margin-footer {
     max-width: 264px;
     margin: 0;
@@ -838,7 +842,8 @@ ul {
   .footer-container {
     align-items: baseline;
     flex-wrap: nowrap;
-    padding: 0;
+    padding: 0 15px;
+    gap: 0;
   }
   .footer-media {
     margin-right: 80px;
@@ -874,7 +879,7 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open {
+.modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
@@ -918,6 +923,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button-close:hover,
 .button-close:focus {
   background-color: #404bbf;
@@ -936,7 +942,6 @@ ul {
   text-align: center;
   color: #2e2f42;
   width: 100%;
-  height: 24px;
   margin-bottom: 16px;
 }
 .modal-form {
@@ -1105,8 +1110,9 @@ ul {
   margin-bottom: auto;
 }
 .mobile_menu_item {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
+
 .mobile_menu_link {
   font-weight: 700;
   font-size: 36px;
@@ -1117,7 +1123,11 @@ ul {
 .mobile_menu_link:hover {
   color: #404bbf;
 }
-.mobile_menu-contact {
+.mobile_menu_link.current {
+  color: #404bbf;
+}
+
+.mobile_menu_contact {
   margin-bottom: 48px;
   font-weight: 500;
   font-size: 20px;
@@ -1128,7 +1138,6 @@ ul {
   flex-direction: column;
   gap: 24px;
 }
-
 .mob-menu-mail {
   color: #434455;
   font-weight: 500;
@@ -1136,9 +1145,13 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.mob-menu-mail.current {
+  color: #404bbf;
+}
 .mob-menu-mail:hover {
   color: #404bbf;
 }
+
 .mobile_menu_social {
   display: flex;
   gap: 40px;

@@ -181,7 +181,7 @@
             </li>
             <li class="stand">
               <img
-                srcset="./images/img-tom@1x.jpg 1x, ./images/img-tom@1x.jpg 2x"
+                srcset="./images/img-tom@1x.jpg 1x, ./images/img-tom@2x.jpg 2x"
                 src="./images/img-tom@1x.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -752,7 +752,7 @@
     <!--          Mobile's menu         -->
 
     <div class="mobile_menu" data-menu>
-      <button type="button" class="button-close">
+      <button type="button" class="button-close" data-menu-close>
         <svg class="icon-modal" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -769,9 +769,9 @@
         </li>
       </ul>
 
-      <ul class="mobile_menu-contact">
+      <ul class="mobile_menu_contact">
         <li>
-          <a class="mob-menu-mail" href="tel:+110001111111"
+          <a class="mob-menu-mail current" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
         </li>
@@ -814,14 +814,25 @@
       </ul>
     </div>
 
-    <!-- <script>
-      () => {
+    <script>
+      (() => {
         const refs = {
           openMenuBtn: document.querySelectorAll("[data-menu-open]"),
           closeMenuBtn: document.querySelectorAll("[data-menu-close]"),
           menu: document.querySelector("[data-menu]"),
         };
-      };
-    </script> -->
+        refs.openMenuBtn.forEach((element) => {
+          element.affEventListener("click", toggleMenu);
+        });
+        refs.closeMenuBtn.forEach((element) => {
+          element.affEventListener("click", toggleMenu);
+        });
+
+        function toggleMenu() {
+          refs.menu.classList.toggle("is-open");
+          document.body.classList.toddle("no-scroll");
+        }
+      })();
+    </script>
   </body>
 </html>
