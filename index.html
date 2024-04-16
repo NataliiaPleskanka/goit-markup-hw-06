@@ -821,16 +821,17 @@
           closeMenuBtn: document.querySelectorAll("[data-menu-close]"),
           menu: document.querySelector("[data-menu]"),
         };
+
         refs.openMenuBtn.forEach((element) => {
-          element.affEventListener("click", toggleMenu);
+          element.addEventListener("click", toggleMenu);
         });
         refs.closeMenuBtn.forEach((element) => {
-          element.affEventListener("click", toggleMenu);
+          element.addEventListener("click", toggleMenu);
         });
 
         function toggleMenu() {
           refs.menu.classList.toggle("is-open");
-          document.body.classList.toddle("no-scroll");
+          document.body.classList.toggle("no-scroll");
         }
       })();
     </script>
