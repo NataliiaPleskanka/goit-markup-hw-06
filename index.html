@@ -67,7 +67,9 @@
       <section class="hero-section">
         <div class="container hero-container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -661,9 +663,9 @@
 
     <!--       Modal Overlay           -->
 
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="button-close">
+        <button type="button" class="button-close" data-modal-close>
           <svg class="icon-modal" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -820,6 +822,26 @@
           openMenuBtn: document.querySelectorAll("[data-menu-open]"),
           closeMenuBtn: document.querySelectorAll("[data-menu-close]"),
           menu: document.querySelector("[data-menu]"),
+        };
+
+        refs.openMenuBtn.forEach((element) => {
+          element.addEventListener("click", toggleMenu);
+        });
+        refs.closeMenuBtn.forEach((element) => {
+          element.addEventListener("click", toggleMenu);
+        });
+
+        function toggleMenu() {
+          refs.menu.classList.toggle("is-open");
+          document.body.classList.toggle("no-scroll");
+        }
+      })();
+
+      (() => {
+        const refs = {
+          openMenuBtn: document.querySelectorAll("[data-modal-open]"),
+          closeMenuBtn: document.querySelectorAll("[data-modal-close]"),
+          menu: document.querySelector("[data-modal]"),
         };
 
         refs.openMenuBtn.forEach((element) => {
